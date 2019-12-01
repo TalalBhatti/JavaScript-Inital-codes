@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+</head>
+<body>
+    
+    <style>@font-face {
+        font-family: AtomicRobusta;
+        src: url('Atomic-Robusta.otf');
+    }
+    h1,h2,h5{font-family: AtomicRobusta}
+    img{vertical-align: middle}
+    </style>
+    <h1>Hello World</h1>
+    <h5>My First Java Page</h5>
+    <script>
+        var userCity= prompt("Enter your city");
+        var cities = ["karachi","Islamabad","Faisalabad","Lahore"];
+        var cityExist=false;
+        for (var i=0;i<4;i++)
+        {
+            if(cities[i].toLowerCase == userCity.toLowerCases)
+            {
+            alert("Piaic is there");
+            cityExist = true;
+            break;
+            }
+        
+            // else
+            // {
+            //  alert("coming soon");
+            //  }
+            //if(!cityExist){
+            //    alert("coming soon");
+            //}   
+        }
+        if(!cityExist){
+            alert("coming soon");  //this is the only condition in which loop will be terminated.
+            }
+    </script>
+</body>
+</html>

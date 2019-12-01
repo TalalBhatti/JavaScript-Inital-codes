@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+</head>
+<body>
+    <script>
+       var message="I am a human and I like Mangoes"
+       var textLength = message.length;
+       alert(message.indexOf("Mangoes"));
+
+       for (k=0;k<textLength;k++){
+           if(message.slice(k,k+4) === "like"){
+               alert(message.slice(0,k));
+               alert(message.slice(k+4));
+               message = message.slice(0,k) + "dislike" + message.slice(k+4);
+               break;
+           } 
+       }
+       alert(message);
+       alert(message.lastIndexOf("Mangoes"));
+    </script>
+</body>
+</html>

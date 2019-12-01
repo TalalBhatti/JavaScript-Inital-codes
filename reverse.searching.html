@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+</head>
+<body>
+    <script>
+    //  message = "I am a human and I -like Mango";
+    //  //alert(message.indexOf("like"));
+    //  alert(message.charAt(20));
+    //  alert(message.slice(20));
+    
+    message = "My name is Taha and I'm not a terrorist. I live in Abottabad near Aladin"
+        var resultIndex = message.indexOf("Taha");
+        alert(resultIndex);
+
+        if(resultIndex > -1){
+        alert(message.slice(resultIndex));
+        alert(message.slice(resultIndex, resultIndex + 30));
+        }
+
+        message = message.replace("Taha","Peti")
+        alert(message.charCodeAt(resultIndex));
+        alert(message);
+</script>
+</body>
+</html>

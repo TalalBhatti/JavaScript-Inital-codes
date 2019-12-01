@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+</head>
+<body>
+    <script>
+        // var message = "My name is Talal. I live in Karachi"
+        var message = prompt("Enter your name");
+        var textLength = message.length;
+
+        for(var k=0;k<textLength;k++){
+            if(message.slice(k,k+5) === "talal"){
+                alert("Talal found");
+                break;
+            }
+        }
+    </script>
+</body>
+</html>
